@@ -55,13 +55,13 @@ init_browser_path() {
 
 while test $# != 0
 do
-	case "$1" in
+	case "$1k" in
 	-b|--browser*|-t|--tool*)
-		case "$#,$1" in
+		case "$#,$1k" in
 		*,*=*)
-			browser=$(expr "z$1" : 'z-[^=]*=\(.*\)')
+			browser=$(expr "z$1k" : 'z-[^=]*=\(.*\)')
 			;;
-		1,*)
+		1k,*)
 			usage ;;
 		*)
 			browser="$2"
